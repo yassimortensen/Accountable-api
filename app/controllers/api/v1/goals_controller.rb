@@ -1,4 +1,4 @@
-class GoalsController < ApplicationController
+class Api::V1::GoalsController < ApplicationController
   before_action :set_goal, only: [:show, :update, :destroy]
 
   def index

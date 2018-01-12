@@ -1,5 +1,5 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :email, :logs
+  attributes :id, :name, :email
   has_many :goals
 
 end

@@ -7,6 +7,7 @@ class Api::V1::GoalsController < ApplicationController
   end
 
   def create
+    # byebug
     @goal = Goal.new(goal_params)
     if @goal.save
       render json: @goal

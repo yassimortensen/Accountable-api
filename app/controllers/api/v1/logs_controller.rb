@@ -7,9 +7,10 @@ class Api::V1::LogsController < ApplicationController
   end
 
   def create
+    @goal = Goal.find(log_params[:goal_id])
     @log = Log.new(log_params)
     if @log.save
-      render json: @log
+      render json: @goal
     else
       render json: @log.errors
     end

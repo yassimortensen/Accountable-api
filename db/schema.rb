@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180112184513) do
+ActiveRecord::Schema.define(version: 20180117190633) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20180112184513) do
     t.text "description"
     t.integer "frequency"
     t.boolean "binary"
-    t.integer "amount"
+    t.float "amount"
     t.string "unit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 20180112184513) do
     t.integer "goal_id"
     t.date "date"
     t.boolean "binary_input"
-    t.integer "amount_input"
+    t.float "amount_input"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

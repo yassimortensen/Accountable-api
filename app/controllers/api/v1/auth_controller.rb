@@ -6,6 +6,7 @@ class Api::V1::AuthController < ApplicationController
       render json: {error: 'User is invalid', status: 401}
     elsif user.authenticate(params[:password])
       render json: {
+        name: user.name,
         email: user.email,
         id: user.id,
         jwt: issue_token(user.id),
@@ -22,6 +23,7 @@ class Api::V1::AuthController < ApplicationController
   def show
     if current_user
       render json: {
+        name: current_user.name,
         email: current_user.email,
         id: current_user.id,
         jwt: issue_token(current_user.id),

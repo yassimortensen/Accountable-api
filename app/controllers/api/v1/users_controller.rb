@@ -9,7 +9,16 @@ class Api::V1::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      render json: @user
+      render json: {
+        name: @user.name,
+        email: @user.email,
+        id: @user.id,
+        jwt: issue_token(@user.id),
+        goals:
+          @user.goals.map do |goal|
+            GoalSerializer.new(goal)
+          end
+      }
     else
       render json: @user.errors
     end

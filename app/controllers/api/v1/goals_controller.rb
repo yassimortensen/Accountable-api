@@ -29,9 +29,8 @@ class Api::V1::GoalsController < ApplicationController
   end
 
   def destroy
-    @goals = Goal.all
     @goal.destroy
-    render json: @goals
+    render json: {message: "successful delete"}
   end
 
   private

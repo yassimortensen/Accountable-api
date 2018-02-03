@@ -1,25 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Welcome to Blush!
 
-Things you may want to cover:
+Accountable is a WebApp that makes it easy to track your goals to lead a more productive life. The app allows users to:
+- Create and login to an account with a username and password
+- Set long-term goals, with customizable tracking information
+- Users can scroll through each week in their journal and see their logs over time, like paging through a journal
+- Users can create goals and logs and watch each submission pop up in the appropriate date slot
+- After 30 days of tracking, an analytics platform is unlocked for users to track their progress in each goal
+- Either a line or bar graph is shown for analytics based on the type of goal (binary vs amount tracking)
 
-* Ruby version
+This Accountable API is seeded with default data for an existing user.
 
-* System dependencies
 
-* Configuration
+## GETTING STARTED ##
+- All of the gems you need to install are in the the Gemfile. Run the command `bundle install` in your terminal.
+- Run the command Rails S to launch a local server to view the site in your browser.
 
-* Database creation
+- React.js frontend can be found here: https://github.com/yassimortensen/Accountable-frontend
 
-* Database initialization
+## AUTHORS ##
 
-* How to run the test suite
+- Yassi Mortensen - https://github.com/yassimortensen
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
-# Accountable-api
+## LICENSE ##
+- Accountable is released under the WeWork License.

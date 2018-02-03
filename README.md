@@ -1,6 +1,6 @@
 # README
 
-# Welcome to Blush!
+# Welcome to Accountable!
 
 Accountable is a WebApp that makes it easy to track your goals to lead a more productive life. The app allows users to:
 - Create and login to an account with a username and password
